@@ -22,10 +22,20 @@ int main()
     cout << "Total Change: " << change <<endl;
     cout << "dollars " << static_cast<int>(change) <<endl;
 
-    change = change - static_cast<int>(change); //get rid of dollar place
-                                                //for coin calcs
+    //Beginning of Coin Calcs
+    change = (change - static_cast<int>(change)) * 100;//get rid of dollar place
+                                                       //for coin calcs
 
-    cout << "quarters " << static_cast<int>((change * 100 + 0.5) % 25)  <<endl;
+    cout << "quarters " << static_cast<int>(change) / 25 <<endl;
+    change = static_cast<int>(change) % 25;
+
+    cout << "dimes " << static_cast<int>(change) / 10 <<endl;
+    change = static_cast<int>(change) % 10;
+
+    cout << "nickels " << static_cast<int>(change) / 5 <<endl;
+    change = static_cast<int>(change) % 5;
+
+    cout << "pennies " << static_cast<int>(change) / 1 <<endl;
 
 
 
