@@ -53,7 +53,9 @@ int main()
      * I would also like to say srand and rand suck, and i feckin hate em.
      *
      * Save me friends.
-     *
+     */
+
+
     //PROCESSING - Count of each simulation
     for (int i = 0; i < sim; i++){
 
