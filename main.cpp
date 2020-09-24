@@ -40,6 +40,20 @@ int main()
     outcome6 = 0;
     sum = 0;
 
+
+    /* FOR MATT AND KEVIN
+     * -------------------------
+     * Basically, I need to run 4 simulations.
+     *
+     * The nested loop you see is what determines the outcome of each simulation
+     *
+     * Simulation is terminated when the sum of random rolls (representing
+     * a 6 sided dice) equals the input value given above OR the d6 rolls a 1
+     *
+     * I would also like to say srand and rand suck, and i feckin hate em.
+     *
+     * Save me friends.
+     *
     //PROCESSING - Count of each simulation
     for (int i = 0; i < sim; i++){
 
